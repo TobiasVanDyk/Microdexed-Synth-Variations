@@ -11,7 +11,7 @@ It is constructed on stripboard and a Fritzing layout is included here, as are t
 </p>
 
 <p align="left">
-<img src="MicrodexedTouch.jpg" height="180" /> 
+<img src="MicrodexedTouch.png" height="180" /> 
 <img src="images/mdt1.jpg" height="180" /> 
 <img src="images/mdt2.jpg" height="180" /> 
 </p>
