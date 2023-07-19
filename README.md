@@ -11,4 +11,4 @@ Variations of the Microdexed FM Synth by [**Codeberg-dcoredump**](https://codebe
 
 [**MicrodexedTouch FM Synth Teensy 4.1 Variation**](Microdexed2)
 
-[**Microdexed FM Synth Teensy 4.0 Variation**](Microdexed1)
+[**Microdexed FM Synth Teensy 4.0 Variation**](Microdexed3)
