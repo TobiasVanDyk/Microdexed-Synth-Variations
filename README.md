@@ -7,6 +7,8 @@ Variations of the Microdexed FM Synth by [**Codeberg-dcoredump**](https://codebe
 <img src="images/mdt1.jpg" height="220" /> 
 </p>
 
-[**Microdexed FM Synth Variation**](Microdexed1)
+[**Microdexed FM Synth Teensy 3.6 Variation**](Microdexed1)
 
-[**MicrodexedTouch FM Synth Variation**](Microdexed2)
+[**MicrodexedTouch FM Synth Teensy 4.1 Variation**](Microdexed2)
+
+[**Microdexed FM Synth Teensy 4.0 Variation**](Microdexed1)
