@@ -5,9 +5,9 @@ This is variation of the MicroDexed 6-operator-FM-YanahDX7-Synth by [**Codeberg-
 It is currently constructed on a breadboard and the connections between the Teensy 4.0 and the [**SDCard module**](images/SDCard.jpg), the two encoders, the PCM5102A DAC and the LCD are given in [**Connections.txt**](Connections.txt). The changed DAC connections are not described in config.h and had to be traced from a [**Teensy 4.1 to teensy 3.6 adapter board**](images/T41-Adapter-Board.jpg) from another repository.
 
 <p align="left">
-<img src="mdt40.jpg" height="180" /> 
-<img src="Connections.jpg" height="180" /> 
-<img src="T41-Adapter-Board.jpg" height="180" /> 
+<img src="images/mdt40.jpg" height="180" /> 
+<img src="images/Connections.jpg" height="180" /> 
+<img src="images/T41-Adapter-Board.jpg" height="180" /> 
 </p>
 
 
