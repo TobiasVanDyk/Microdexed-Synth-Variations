@@ -1,4 +1,4 @@
-# Microdexed with Teensy 3.6 and PCM5102A and 16x2Characteri2c LCD and a 6N137 MidiIn
+# Microdexed with Teensy 3.6 and PCM5102A and 16x2Character i2c LCD and a 6N137 Midi In
 
 This is a variation of the MicroDexed 6-operator-FM-YanahDX7-Synth by [**Codeberg-dcoredump**](https://codeberg.org/dcoredump/MicroDexed). It replaced the (recommended) Teensy Audio board with an inexpensive PCM5102A DAC module, and used a 6N137 for the Midi input. The changes made to the config.h file are included here. Also include here is the firmware (hex file) used that can be uploaded to the Teensy 3.6 using the Teensyloader.
 
