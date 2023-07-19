@@ -1,0 +1,20 @@
+
+SDCard CS    Teensy 4.0 Pin 10
+SDCard Mosi  Teensy 4.0 Pin 11
+SDCard Miso  Teensy 4.0 Pin 12
+SDCard SCK   Teensy 4.0 Pin 13
+
+Encoder-Left Pin L Teensy 4.0 Pin 2
+Encoder-Left Pin R Teensy 4.0 Pin 3
+Encoder-Button L   Teensy 4.0 Pin 4
+
+Encoder-Right Pin L Teensy 4.0 Pin 5
+Encoder-Right Pin R Teensy 4.0 Pin 6
+Encoder-Button R     Teensy 4.0 Pin 8
+
+PCM5102A DAC DIN  Teensy 4.0 Pin 7
+PCM5102A DAC BCK  Teensy 4.0 Pin 21
+PCM5102A DAC LRCK Teensy 4.0 Pin 20
+
+LCD i2c SCL Teensy 4.0 Pin 18
+LCD i2c SDA Teensy 4.0 Pin 18
