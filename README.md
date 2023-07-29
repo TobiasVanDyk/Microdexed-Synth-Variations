@@ -16,4 +16,4 @@ A Variation of the Minidexed Raspberry Pi FM Synth 8xDX7 by [**Probonopd**](http
 
 [**Microdexed FM Synth Teensy 4.0 Variation**](Microdexed3)
 
-[**Minidexed FM Synth WM8960 Synth**](Minidexed1)
+[**Minidexed FM Raspberry Pi WM8960 Synth**](Minidexed1)
