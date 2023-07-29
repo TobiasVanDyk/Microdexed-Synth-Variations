@@ -11,9 +11,9 @@ It used the snap-close 3d-case made available there. Two changes were made: (1) 
 </p>
 
 <p align="left">
-<img src="images/minid10.jpg" height="180" /> 
-<img src="images/minid11.jpg" height="180" /> 
-<img src="images/minid12.jpg" height="180" /> 
+<img src="images/minid10.jpg" height="190" /> 
+<img src="images/minid11.jpg" height="190" /> 
+<img src="images/minid12.jpg" height="190" /> 
 </p>
 
 
