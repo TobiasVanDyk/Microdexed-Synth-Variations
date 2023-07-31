@@ -18,7 +18,7 @@ The Minidexed can be used as a USB Midi host i.e. it can play via a Midi USB key
 <img src="images/minid12.jpg" height="210" /> 
 </p>
 
-The MT32 (Roland) similarly runs on Circle but the interface needs further development. It is currently only constructed on breadboard and used a Raspberry Pi 3A+, and a WM8960 DAC.
+The [**MT32-Pi**](https://github.com/dwhinham/mt32-pi)(Roland) similarly runs on Circle but the interface needs further development. It is currently only constructed on breadboard and used a Raspberry Pi 3A+, and a WM8960 DAC and an SH1106 OLED 128x64 display. The mt32-pi.cfg used is included here.
 
 <p align="left">
 <img src="images/mt32.jpg" height="280" /> 
