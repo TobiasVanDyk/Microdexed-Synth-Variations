@@ -23,6 +23,7 @@ The Minidexed can be used as a USB Midi host i.e. it can play via a Midi USB key
 The [**MT32-Pi**](https://github.com/dwhinham/mt32-pi) Roland-MT32, similarly runs on Circle, and is also a baremetal MIDI synthesizer (for a Raspberry Pi 3 or above), based on Munt and FluidSynth, but the interface needs further development. It is currently only constructed on breadboard and used a Raspberry Pi 3A+, and the same WM8960 DAC but used an SH1106 OLED 128x64 display. The mt32-pi.cfg used is included here.
 
 <p align="left">
-<img src="images/mt32.jpg" height="280" /> 
+<img src="images/mt32.jpg" height="260" /> 
+<img src="images/MT32a_bb.jpg" height="260" />   
 </p>
 
