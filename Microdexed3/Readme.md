@@ -18,3 +18,4 @@ This is variation of the development branch of the MicroDexed 6-operator-FM-Yana
 <img src="images/MicrodexedDev1.jpg" height="280" /> 
 </p>
 
+Note the warning when [**using i2c Backpacks with 5v LCD displays and 3v3 MCU's or Raspberry Pi's**](https://github.com/TobiasVanDyk/Microdexed-Synth-Variations/tree/main/i2cbackpack)
