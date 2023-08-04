@@ -1,5 +1,5 @@
 
-## Using i2c Backpacks with 5v LC displays and 3v3 MCU's or Raspberry Pi's
+## Using i2c Backpacks with 5v LCD displays and 3v3 MCU's or Raspberry Pi's
 
 When using a 5v LCD 1602 character display remove the two two SMD 4k7 resistors to the lower left of the IC - they are on the I2C Interface that pulls SDA and SCL up to 5v - and then add external resistors that pull them up to 3v3 when using these 5v displays with a Teensy 3.6, 4.0 or 4.1, or with a Raspberry Pi - see the before and after photos below. 
 
