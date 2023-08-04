@@ -1,7 +1,7 @@
 
 ## Using i2c Backpacks with 5v LCD displays and 3v3 MCU's or Raspberry Pi's
 
-When using a 5v LCD 1602 character display remove the two two SMD 4k7 resistors to the lower left of the IC - they are on the I2C Interface that pulls SDA and SCL up to 5v - and then add external resistors that pull them up to 3v3 when using these 5v displays with a Teensy 3.6, 4.0 or 4.1, or with a Raspberry Pi - see the before and after photos below. 
+When using a 5v LCD 1602 character display remove the two two SMD 4k7 resistors to the lower left of the IC - they are on the I2C Interface that pulls SDA and SCL up to 5v - and then add external resistors that pull them up to 3v3 when using these 5v displays with a Teensy 3.6, 4.0 or 4.1, or with a Raspberry Pi - see the before and after photos below. It may also be necessary to insert a 1N4148 in the LCD +5v line.
 
 This is also mentioned here: [**16x2 LCD**](https://github.com/probonopd/MiniDexed/wiki/Hardware#usb-midi-device)
 *LCD1602 display or similar.  So you can get a display with or without an i2c "backpack" board. An an i2c "backpack" board greatly simplifies the setup because fewer physical connections need to be made.*
