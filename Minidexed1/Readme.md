@@ -27,3 +27,5 @@ The [**MT32-Pi**](https://github.com/dwhinham/mt32-pi) Roland-MT32, similarly ru
 <img src="images/MT32a_bb.jpg" height="260" />   
 </p>
 
+Note the warning when [**using i2c Backpacks with 5v LCD displays and 3v3 MCU's or Raspberry Pi's**](https://github.com/TobiasVanDyk/Microdexed-Synth-Variations/tree/main/i2cbackpack)
+
