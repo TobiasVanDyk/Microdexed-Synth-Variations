@@ -22,3 +22,4 @@ It is constructed on stripboard and a Fritzing layout is included here, as are t
 <img src="images/mdt5.jpg" height="180" /> 
 </p>
 
+Note the warning when [**using i2c Backpacks with 5v LCD displays and 3v3 MCU's or Raspberry Pi's**](https://github.com/TobiasVanDyk/Microdexed-Synth-Variations/tree/main/i2cbackpack)
