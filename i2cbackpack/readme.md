@@ -8,7 +8,7 @@ This is also mentioned here: [**16x2 LCD**](https://github.com/probonopd/MiniDex
 
 ***WARNING: Simpler backpacks are designed to be powered by 5V and include pull-up resistors on the I2C bus to 5V too. If you have one of these you will need a 3V3 to 5V level shifter to avoid pulling up the Pi's I2C GPIO pins to 5V! Alternatively it may be possible to remove (desolder) the built-in pull-ups to 5V and add new ones to 3V3. If you're not sure what kind you have, power the LCD from 5V and GND only and measure the voltage on the I2C pins to see if it is 5V or 3V3. Non-backpack LCDs, whilst still powered by 5V, are only connected to Pi GPIO outputs, so driving them at 3V3 from the Pi is fine.***
 
-Another solution leaves the 4k7 pullup resistors but add two 10k resistors to form a voltage divider - refer to the discussion [**here**](https://github.com/probonopd/MiniDexed/discussions/373) or [**here**](https://forums.raspberrypi.com/viewtopic.php?t=88399).
+Another solution leaves the 4k7 pullup resistors but add two 10k resistors to ground to form a 5v x 2/3 voltage divider - refer to the discussions [**here**](https://github.com/probonopd/MiniDexed/discussions/373) or [**here**](https://forums.raspberrypi.com/viewtopic.php?t=88399).
 
 The [**discussion above**](https://github.com/probonopd/MiniDexed/discussions/373) also examines the i2c address settings for the two PCF8574 variants - refer to the two tables below.
 
