@@ -18,12 +18,12 @@ The [**discussion above**](https://github.com/probonopd/MiniDexed/discussions/37
 </p>
 
 <p align="left">
-<img src="voltage-divider.JPG" height="160" /> 
-<img src="pcf8574.jpg" height="160" /> 
-<img src="address-jumpers.png" height="160" />   
+<img src="voltage-divider.JPG" height="170" /> 
+<img src="pcf8574.jpg" height="170" /> 
+<img src="address-jumpers.png" height="170" />   
 </p>
 
 <p align="left">
-<img src="addressA.png" height="180" /> 
-<img src="addressB.png" height="180" /> 
+<img src="addressA.png" height="210" /> 
+<img src="addressB.png" height="210" /> 
 </p>
