@@ -24,6 +24,6 @@ The [**discussion above**](https://github.com/probonopd/MiniDexed/discussions/37
 </p>
 
 <p align="left">
-<img src="addressA.png" height="210" /> 
-<img src="addressB.png" height="210" /> 
+<img src="addressA.png" height="240" /> 
+<img src="addressB.png" height="240" /> 
 </p>
