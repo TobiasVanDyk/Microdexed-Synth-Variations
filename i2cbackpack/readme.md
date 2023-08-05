@@ -19,8 +19,8 @@ The [**discussion above**](https://github.com/probonopd/MiniDexed/discussions/37
 
 <p align="left">
 <img src="voltage-divider.JPG" height="170" /> 
-<img src="pcf8574.jpg" height="170" /> 
-<img src="address-jumpers.png" height="170" />   
+<img src="i2c-Backpack.png" height="170" /> 
+<img src="pcf8574.jpg" height="170" />   
 </p>
 
 <p align="left">
