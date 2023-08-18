@@ -53,3 +53,9 @@ The resulting unmodified sdcard folder is here as compiled-sdcard.zip, with the 
 <img src="images/compile2.png" height="240" /> 
 <img src="images/compile1.png" height="240" /> 
 </p>
+
+Using exactly the same procedure under Linux Mint 21.2 also yielded a functional setup - refer to the screenshot below - and the sdcard files are in sdcard.tar.gz.
+
+<p align="left">
+<img src="images/mint212.png" height="280" /> 
+</p>
