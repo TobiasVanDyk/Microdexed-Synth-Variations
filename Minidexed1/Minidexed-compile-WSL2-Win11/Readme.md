@@ -1,9 +1,9 @@
 # Compiling Minidexed under WSL2 (Ubuntu 20.04) on Windows 11
 
 ## Minidexed with Raspberry Pi 3B+ using a Waveshare WM8960 DAC hat and a 6N137 MidiIn
-Using a updated Ubuntu 20.04 WSL2 on Windows 11 for compiling Minidexed was quick - a few minutes - but there are a few additional steps not mentioned on the Minidexed Wike.
+Using a updated Ubuntu 20.04 WSL2 on Windows 11 for compiling Minidexed was quick - a few minutes - but there are a few additional steps not mentioned on the [**Minidexed Wiki**](https://github.com/probonopd/MiniDexed/wiki/Development).
 
-On a fresh WSL2 also needs:
+A fresh WSL2 also needs:
 ``` 
 sudo apt-get install build-essential
 sudo apt install zip
@@ -16,7 +16,7 @@ RASPPI = 3
 PREFIX64 = aarch64-none-elf-
 ``` 
 
-copied to both ~/MiniDexed/circle-stdlib/ and ~/MiniDexed after the git clone operations has been completed but before ./build.sh
+Copied to both ~/MiniDexed/circle-stdlib/ and ~/MiniDexed after the git clone operations has been completed but before ./build.sh
 
 Then follow the steps as in compile-history.txt i.e. start with:
 
