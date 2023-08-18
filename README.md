@@ -18,3 +18,5 @@ In addition three Circle-based Raspberry Pi synths were made: Two Raspberry Pi 3
 * [**Microdexed FM Synth Teensy 4.0 and Teensy 4.1 Dev-branch Variation**](Microdexed3)
 
 * [**Minidexed FM and MT32-Pi Raspberry Pi 3B+ and 3A+ and WM8960 DAC Circle-based Synths**](Minidexed1)
+
+* [**Compiling Minidexed under WSL2 (Ubuntu 20.04) on Windows 11**](https://github.com/TobiasVanDyk/Microdexed-Synth-Variations/tree/main/Minidexed1/Minidexed-compile-WSL2-Win11)
