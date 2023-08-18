@@ -3,6 +3,8 @@
 Variations of the Microdexed FM Synth by [**Codeberg-dcoredump**](https://codeberg.org/dcoredump/MicroDexed) - using a PCM5102A module, and 6N137 for the Midi input, and Microdexed Touch FM Synth by [**Codeberg-positionhigh**](https://codeberg.org/positionhigh/MicroDexed-touch) - it replaced the 2.8 inch LCD with a 3.2 inch sized LCD, used full-sized Midi in and out sockets, and a 6N137 for the Midi input.
 
 In addition three Circle-based Raspberry Pi synths were made: Two Raspberry Pi 3B+ and 3B synth variations of the **miniDexed FM Synth** (which is an 8 x DX7) synth, by [**Probonopd**](https://github.com/probonopd/MiniDexed) using a Waveshare WM8960 DAC Hat and a 6N137 MidiIn, and a third **MT32-Pi** synth using a Raspberry 3A+ and WM8960 DAC.
+
+The [**Zynthian Open Synth Platform**](https://zynthian.org/) also use both the [**Dexed**](https://zynthian.org/engines/_engine-list/engine-dexed) (Microdexed and Minidexed) and [**Fluidsynth**](https://zynthian.org/engines/_engine-list/engine-fluidsynth) (MT32-Pi) synth engines, but is based on a more traditional low-latency (almost RT, operating system.
  
 <p align="left">
 <img src="images/md1.jpg" height="120" /> 
