@@ -1,7 +1,7 @@
 # Compiling Minidexed under WSL2 (Ubuntu 20.04) on Windows 11
 
 ## Minidexed with Raspberry Pi 3B+ using a Waveshare WM8960 DAC hat and a 6N137 MidiIn
-Using a updated Ubuntu 20.04 WSL2 on Windows 11 for compiling Minidexed was quick - a few minutes - but there are a few additional steps not mentioned on the [**Minidexed Wiki**](https://github.com/probonopd/MiniDexed/wiki/Development).
+Using a updated Ubuntu 20.04 WSL2 on Windows 11 for compiling Minidexed was quick - a few minutes - but there are a few additional steps not mentioned on the [**Minidexed Wiki**](https://github.com/probonopd/MiniDexed/wiki/Development). The [**step discussed here**](https://github.com/probonopd/MiniDexed/discussions/269) was not needed.
 
 A fresh WSL2 also needs:
 ``` 
