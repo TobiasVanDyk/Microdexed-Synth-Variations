@@ -1,0 +1,42 @@
+  207  export RPI=3
+  208  git clone https://github.com/probonopd/MiniDexed
+  209  cd MiniDexed
+  210  mkdir -p kernels sdcard
+  211  git submodule update --init --recursive
+  212  sh -ex submod.sh
+  213  wget https://developer.arm.com/-/media/Files/downloads/gnu-a/10.3-2021.07/binrel/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf.tar.xz
+  214  tar xvf gcc-arm-*-*.tar.xz
+  215  export PATH=$(readlink -f ./gcc-*/bin/):$PATH
+  216  $PATH
+  217  ls
+  218  nano Config.mk
+  219  ls
+  220  mc
+  221  ./build.sh
+  222  gcc --version
+  223  sudo apt-get update
+  224  sudo apt-get install build-essential
+  225  gcc --version
+  226  ./build.sh
+  227  mc
+  228  cp ./src/kernel*.img ./kernels/
+  229  cd ./circle-stdlib/libs/circle/boot
+  230  make
+  231  make armstub64
+  232  cd -
+  233  cd sdcard
+  234  cp ../kernels/* . || true
+  235  zip -r ../MiniDexed_$GITHUB_RUN_NUMBER_$(date +%Y-%m-%d).zip *
+  236  sudo apt install zip
+  237  zip -r ../MiniDexed_$GITHUB_RUN_NUMBER_$(date +%Y-%m-%d).zip *
+  238  ../getsysex.sh
+  239  cd ..
+  240  cp -r ./circle-stdlib/libs/circle/boot/* sdcard
+  241  rm -rf sdcard/config*.txt sdcard/README sdcard/Makefile sdcard/armstub sdcard/COPYING.linux
+  242  cp ./src/config.txt ./src/minidexed.ini ./src/*img ./src/performance.ini sdcard/
+  243  echo "usbspeed=full" > sdcard/cmdline.txt
+  244  cd sdcard
+  245  ls
+  246  cd -
+  247  mc
+  248  history

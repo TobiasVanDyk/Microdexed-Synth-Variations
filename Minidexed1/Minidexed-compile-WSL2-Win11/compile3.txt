@@ -1,0 +1,466 @@
+mkdir -p -- /home/tobias/MiniDexed/circle-stdlib/install/aarch64-none-circle/include
+mkdir -p -- /home/tobias/MiniDexed/circle-stdlib/install/aarch64-none-circle/include/machine
+mkdir -p -- /home/tobias/MiniDexed/circle-stdlib/install/aarch64-none-circle/include/rpc
+mkdir -p -- /home/tobias/MiniDexed/circle-stdlib/install/aarch64-none-circle/include/ssp
+mkdir -p -- /home/tobias/MiniDexed/circle-stdlib/install/aarch64-none-circle/include/sys
+mkdir -p -- /home/tobias/MiniDexed/circle-stdlib/install/aarch64-none-circle/include/bits
+make[5]: Leaving directory '/home/tobias/MiniDexed/circle-stdlib/build/circle-newlib/aarch64-none-circle/newlib'
+make[4]: Leaving directory '/home/tobias/MiniDexed/circle-stdlib/build/circle-newlib/aarch64-none-circle/newlib'
+make[3]: Leaving directory '/home/tobias/MiniDexed/circle-stdlib/build/circle-newlib/aarch64-none-circle/newlib'
+make[2]: Leaving directory '/home/tobias/MiniDexed/circle-stdlib/build/circle-newlib'
+make[1]: Leaving directory '/home/tobias/MiniDexed/circle-stdlib/build/circle-newlib'
++ cd libs/circle/addon/display/
++ make clean
+  CLEAN  /home/tobias/MiniDexed/circle-stdlib/libs/circle/addon/display
++ make -j
+  CPP   hd44780device.o
+  CPP   st7789display.o
+  CPP   chardevice.o
+  CPP   ssd1306device.o
+  AR    libdisplay.a
++ cd ../sensor/
++ make clean
+  CLEAN  /home/tobias/MiniDexed/circle-stdlib/libs/circle/addon/sensor
++ make -j
+  CPP   hcsr04.o
+  CPP   mpu6050.o
+  CPP   bmp180.o
+  CPP   mcp300x.o
+  CPP   ky040.o
+  AR    libsensor.a
++ cd ../Properties/
++ make clean
+  CLEAN  /home/tobias/MiniDexed/circle-stdlib/libs/circle/addon/Properties
++ make -j
+  CPP   properties.o
+  CPP   propertiesfile.o
+  CPP   propertiesfatfsfile.o
+  CPP   propertiesbasefile.o
+  AR    libproperties.a
++ cd ../../../..
++ cd ..
++ cd src
++ make clean
+  CLEAN  /home/tobias/MiniDexed/src
++ make -j
+  CPP   main.o
+  CPP   kernel.o
+  CPP   minidexed.o
+  CPP   config.o
+  CPP   userinterface.o
+  CPP   uimenu.o
+  CPP   mididevice.o
+  CPP   midikeyboard.o
+  CPP   serialmididevice.o
+  CPP   pckeyboard.o
+  CPP   sysexfileloader.o
+  CPP   performanceconfig.o
+  CPP   perftimer.o
+  CPP   effect_compressor.o
+  CPP   effect_platervbstereo.o
+  CPP   uibuttons.o
+  CPP   midipin.o
+  CPP   ../Synth_Dexed/src/PluginFx.o
+  CPP   ../Synth_Dexed/src/dexed.o
+  CPP   ../Synth_Dexed/src/dx7note.o
+  CPP   ../Synth_Dexed/src/env.o
+  CPP   ../Synth_Dexed/src/exp2.o
+  CPP   ../Synth_Dexed/src/fm_core.o
+  CPP   ../Synth_Dexed/src/fm_op_kernel.o
+  CPP   ../Synth_Dexed/src/freqlut.o
+  CPP   ../Synth_Dexed/src/lfo.o
+  CPP   ../Synth_Dexed/src/pitchenv.o
+  CPP   ../Synth_Dexed/src/porta.o
+  CPP   ../Synth_Dexed/src/sin.o
+  CPP   ../Synth_Dexed/src/EngineMkI.o
+  CPP   ../Synth_Dexed/src/EngineOpl.o
+  CPP   ../Synth_Dexed/src/EngineMsfa.o
+  CC    ../CMSIS_5/CMSIS/DSP/Source/SupportFunctions/SupportFunctions.o
+  CC    ../CMSIS_5/CMSIS/DSP/Source/BasicMathFunctions/BasicMathFunctions.o
+  CC    ../CMSIS_5/CMSIS/DSP/Source/FastMathFunctions/FastMathFunctions.o
+  CC    ../CMSIS_5/CMSIS/DSP/Source/FilteringFunctions/FilteringFunctions.o
+  CC    ../CMSIS_5/CMSIS/DSP/ComputeLibrary/Source/arm_cl_tables.o
+  CC    ../CMSIS_5/CMSIS/DSP/Source/CommonTables/CommonTables.o
+  LD    kernel8.elf
+  DUMP  kernel8.lst
+  COPY  kernel8.img
+  WC    kernel8.img => 2624800
++ ls kernel8.img
+kernel8.img
++ cd ..
+tobias@i5-11400:~/MiniDexed$ mc
+
+tobias@i5-11400:~/MiniDexed$ cp ./src/kernel*.img ./kernels/
+tobias@i5-11400:~/MiniDexed$ cd ./circle-stdlib/libs/circle/boot
+tobias@i5-11400:~/MiniDexed/circle-stdlib/libs/circle/boot$ make
+rm -f bootcode.bin fixup*.dat start*.elf bcm*.dtb kernel*.img armstub*.bin LICENCE.broadcom COPYING.linux
+make clean -C "../tools/bootloader"
+make[1]: Entering directory '/home/tobias/MiniDexed/circle-stdlib/libs/circle/tools/bootloader'
+rm -f *.o
+rm -f *.elf
+rm -f *.lst
+rm -f *.img
+make[1]: Leaving directory '/home/tobias/MiniDexed/circle-stdlib/libs/circle/tools/bootloader'
+make clean -C armstub
+make[1]: Entering directory '/home/tobias/MiniDexed/circle-stdlib/libs/circle/boot/armstub'
+rm -f *.o *.elf *.bin *.lst
+make[1]: Leaving directory '/home/tobias/MiniDexed/circle-stdlib/libs/circle/boot/armstub'
+wget -q -O LICENCE.broadcom https://github.com/raspberrypi/firmware/blob/ecc243c52789f4d8e837c7300b6effb059dc18c0/boot/LICENCE.broadcom?raw=true
+wget -q -O COPYING.linux https://github.com/raspberrypi/firmware/blob/ecc243c52789f4d8e837c7300b6effb059dc18c0/boot/COPYING.linux?raw=true
+wget -q -O bootcode.bin https://github.com/raspberrypi/firmware/blob/ecc243c52789f4d8e837c7300b6effb059dc18c0/boot/bootcode.bin?raw=true
+wget -q -O fixup.dat https://github.com/raspberrypi/firmware/blob/ecc243c52789f4d8e837c7300b6effb059dc18c0/boot/fixup.dat?raw=true
+wget -q -O fixup_cd.dat https://github.com/raspberrypi/firmware/blob/ecc243c52789f4d8e837c7300b6effb059dc18c0/boot/fixup_cd.dat?raw=true
+wget -q -O start.elf https://github.com/raspberrypi/firmware/blob/ecc243c52789f4d8e837c7300b6effb059dc18c0/boot/start.elf?raw=true
+wget -q -O start_cd.elf https://github.com/raspberrypi/firmware/blob/ecc243c52789f4d8e837c7300b6effb059dc18c0/boot/start_cd.elf?raw=true
+wget -q -O fixup4.dat https://github.com/raspberrypi/firmware/blob/ecc243c52789f4d8e837c7300b6effb059dc18c0/boot/fixup4.dat?raw=true
+wget -q -O fixup4cd.dat https://github.com/raspberrypi/firmware/blob/ecc243c52789f4d8e837c7300b6effb059dc18c0/boot/fixup4cd.dat?raw=true
+wget -q -O start4.elf https://github.com/raspberrypi/firmware/blob/ecc243c52789f4d8e837c7300b6effb059dc18c0/boot/start4.elf?raw=true
+wget -q -O start4cd.elf https://github.com/raspberrypi/firmware/blob/ecc243c52789f4d8e837c7300b6effb059dc18c0/boot/start4cd.elf?raw=true
+wget -q -O bcm2710-rpi-zero-2-w.dtb https://github.com/raspberrypi/firmware/blob/ecc243c52789f4d8e837c7300b6effb059dc18c0/boot/bcm2710-rpi-zero-2-w.dtb?raw=true
+wget -q -O bcm2711-rpi-400.dtb https://github.com/raspberrypi/firmware/blob/ecc243c52789f4d8e837c7300b6effb059dc18c0/boot/bcm2711-rpi-400.dtb?raw=true
+wget -q -O bcm2711-rpi-4-b.dtb https://github.com/raspberrypi/firmware/blob/ecc243c52789f4d8e837c7300b6effb059dc18c0/boot/bcm2711-rpi-4-b.dtb?raw=true
+wget -q -O bcm2711-rpi-cm4.dtb https://github.com/raspberrypi/firmware/blob/ecc243c52789f4d8e837c7300b6effb059dc18c0/boot/bcm2711-rpi-cm4.dtb?raw=true
+tobias@i5-11400:~/MiniDexed/circle-stdlib/libs/circle/boot$ make armstub64
+make -C armstub armstub8-rpi4.bin
+tobias@i5-11400:~/MiniDexed/circle-stdlib/libs/circle/boot$ cd -
+/home/tobias/MiniDexed
+tobias@i5-11400:~/MiniDexed$ cd sdcard
+tobias@i5-11400:~/MiniDexed/sdcard$ cp ../kernels/* . || true
+tobias@i5-11400:~/MiniDexed/sdcard$ zip -r ../MiniDexed_$GITHUB_RUN_NUMBER_$(date +%Y-%m-%d).zip *
+
+Command 'zip' not found, but can be installed with:
+
+sudo apt install zip
+
+tobias@i5-11400:~/MiniDexed/sdcard$ sudo apt install zip
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  zip
+0 upgraded, 1 newly installed, 0 to remove and 2 not upgraded.
+Need to get 167 kB of archives.
+After this operation, 638 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 zip amd64 3.0-11build1 [167 kB]
+Fetched 167 kB in 2s (83.7 kB/s)
+Selecting previously unselected package zip.
+(Reading database ... 38746 files and directories currently installed.)
+Preparing to unpack .../zip_3.0-11build1_amd64.deb ...
+Unpacking zip (3.0-11build1) ...
+Setting up zip (3.0-11build1) ...
+Processing triggers for man-db (2.9.1-1) ...
+tobias@i5-11400:~/MiniDexed/sdcard$ zip -r ../MiniDexed_$GITHUB_RUN_NUMBER_$(date +%Y-%m-%d).zip *
+  adding: kernel8.img (deflated 52%)
+tobias@i5-11400:~/MiniDexed/sdcard$ ../getsysex.sh
+--2023-08-18 12:13:36--  https://yamahablackboxes.com/patches/dx7/factory/rom3a.syx
+Resolving yamahablackboxes.com (yamahablackboxes.com)... 172.67.203.95, 104.21.52.200, 2606:4700:3035::6815:34c8, ...
+Connecting to yamahablackboxes.com (yamahablackboxes.com)|172.67.203.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4104 (4.0K) [application/octet-stream]
+Saving to: ‘sysex/voice/000000_rom3a.syx’
+
+sysex/voice/000000_rom3a.syx  100%[=================================================>]   4.01K  --.-KB/s    in 0s
+
+2023-08-18 12:13:37 (30.4 MB/s) - ‘sysex/voice/000000_rom3a.syx’ saved [4104/4104]
+
+--2023-08-18 12:13:37--  https://yamahablackboxes.com/patches/dx7/factory/rom3b.syx
+Resolving yamahablackboxes.com (yamahablackboxes.com)... 172.67.203.95, 104.21.52.200, 2606:4700:3035::6815:34c8, ...
+Connecting to yamahablackboxes.com (yamahablackboxes.com)|172.67.203.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4104 (4.0K) [application/octet-stream]
+Saving to: ‘sysex/voice/000001_rom3b.syx’
+
+sysex/voice/000001_rom3b.syx  100%[=================================================>]   4.01K  --.-KB/s    in 0s
+
+2023-08-18 12:13:38 (28.4 MB/s) - ‘sysex/voice/000001_rom3b.syx’ saved [4104/4104]
+
+--2023-08-18 12:13:38--  https://yamahablackboxes.com/patches/dx7/factory/rom4a.syx
+Resolving yamahablackboxes.com (yamahablackboxes.com)... 172.67.203.95, 104.21.52.200, 2606:4700:3035::6815:34c8, ...
+Connecting to yamahablackboxes.com (yamahablackboxes.com)|172.67.203.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4104 (4.0K) [application/octet-stream]
+Saving to: ‘sysex/voice/000002_rom4a.syx’
+
+sysex/voice/000002_rom4a.syx  100%[=================================================>]   4.01K  --.-KB/s    in 0.002s
+
+2023-08-18 12:13:39 (1.95 MB/s) - ‘sysex/voice/000002_rom4a.syx’ saved [4104/4104]
+
+--2023-08-18 12:13:39--  https://yamahablackboxes.com/patches/dx7/factory/rom4b.syx
+Resolving yamahablackboxes.com (yamahablackboxes.com)... 172.67.203.95, 104.21.52.200, 2606:4700:3035::6815:34c8, ...
+Connecting to yamahablackboxes.com (yamahablackboxes.com)|172.67.203.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4104 (4.0K) [application/octet-stream]
+Saving to: ‘sysex/voice/000003_rom4b.syx’
+
+sysex/voice/000003_rom4b.syx  100%[=================================================>]   4.01K  --.-KB/s    in 0s
+
+2023-08-18 12:13:40 (30.2 MB/s) - ‘sysex/voice/000003_rom4b.syx’ saved [4104/4104]
+
+--2023-08-18 12:13:40--  https://yamahablackboxes.com/patches/dx7/vrc/vrc101b.syx
+Resolving yamahablackboxes.com (yamahablackboxes.com)... 172.67.203.95, 104.21.52.200, 2606:4700:3035::6815:34c8, ...
+Connecting to yamahablackboxes.com (yamahablackboxes.com)|172.67.203.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4104 (4.0K) [application/octet-stream]
+Saving to: ‘sysex/voice/000004_vrc101b.syx’
+
+sysex/voice/000004_vrc101b.sy 100%[=================================================>]   4.01K  --.-KB/s    in 0s
+
+2023-08-18 12:13:41 (24.7 MB/s) - ‘sysex/voice/000004_vrc101b.syx’ saved [4104/4104]
+
+--2023-08-18 12:13:41--  https://yamahablackboxes.com/patches/dx7/vrc/vrc102a.syx
+Resolving yamahablackboxes.com (yamahablackboxes.com)... 172.67.203.95, 104.21.52.200, 2606:4700:3035::6815:34c8, ...
+Connecting to yamahablackboxes.com (yamahablackboxes.com)|172.67.203.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4104 (4.0K) [application/octet-stream]
+Saving to: ‘sysex/voice/000005_vrc102a.syx’
+
+sysex/voice/000005_vrc102a.sy 100%[=================================================>]   4.01K  --.-KB/s    in 0s
+
+2023-08-18 12:13:42 (29.7 MB/s) - ‘sysex/voice/000005_vrc102a.syx’ saved [4104/4104]
+
+--2023-08-18 12:13:42--  https://yamahablackboxes.com/patches/dx7/vrc/vrc102b.syx
+Resolving yamahablackboxes.com (yamahablackboxes.com)... 172.67.203.95, 104.21.52.200, 2606:4700:3035::6815:34c8, ...
+Connecting to yamahablackboxes.com (yamahablackboxes.com)|172.67.203.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4104 (4.0K) [application/octet-stream]
+Saving to: ‘sysex/voice/000006_vrc102b.syx’
+
+sysex/voice/000006_vrc102b.sy 100%[=================================================>]   4.01K  --.-KB/s    in 0s
+
+2023-08-18 12:13:43 (49.8 MB/s) - ‘sysex/voice/000006_vrc102b.syx’ saved [4104/4104]
+
+--2023-08-18 12:13:43--  https://yamahablackboxes.com/patches/dx7/vrc/vrc103a.syx
+Resolving yamahablackboxes.com (yamahablackboxes.com)... 172.67.203.95, 104.21.52.200, 2606:4700:3035::6815:34c8, ...
+Connecting to yamahablackboxes.com (yamahablackboxes.com)|172.67.203.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4104 (4.0K) [application/octet-stream]
+Saving to: ‘sysex/voice/000007_vrc103a.syx’
+
+sysex/voice/000007_vrc103a.sy 100%[=================================================>]   4.01K  --.-KB/s    in 0s
+
+2023-08-18 12:13:44 (108 MB/s) - ‘sysex/voice/000007_vrc103a.syx’ saved [4104/4104]
+
+--2023-08-18 12:13:44--  https://yamahablackboxes.com/patches/dx7/vrc/vrc103b.syx
+Resolving yamahablackboxes.com (yamahablackboxes.com)... 172.67.203.95, 104.21.52.200, 2606:4700:3035::6815:34c8, ...
+Connecting to yamahablackboxes.com (yamahablackboxes.com)|172.67.203.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4104 (4.0K) [application/octet-stream]
+Saving to: ‘sysex/voice/000008_vrc103b.syx’
+
+sysex/voice/000008_vrc103b.sy 100%[=================================================>]   4.01K  --.-KB/s    in 0s
+
+2023-08-18 12:13:45 (30.4 MB/s) - ‘sysex/voice/000008_vrc103b.syx’ saved [4104/4104]
+
+--2023-08-18 12:13:45--  https://yamahablackboxes.com/patches/dx7/vrc/vrc104a.syx
+Resolving yamahablackboxes.com (yamahablackboxes.com)... 172.67.203.95, 104.21.52.200, 2606:4700:3035::6815:34c8, ...
+Connecting to yamahablackboxes.com (yamahablackboxes.com)|172.67.203.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4104 (4.0K) [application/octet-stream]
+Saving to: ‘sysex/voice/000009_vrc104a.syx’
+
+sysex/voice/000009_vrc104a.sy 100%[=================================================>]   4.01K  --.-KB/s    in 0s
+
+2023-08-18 12:13:46 (31.8 MB/s) - ‘sysex/voice/000009_vrc104a.syx’ saved [4104/4104]
+
+--2023-08-18 12:13:46--  https://yamahablackboxes.com/patches/dx7/vrc/vrc104b.syx
+Resolving yamahablackboxes.com (yamahablackboxes.com)... 172.67.203.95, 104.21.52.200, 2606:4700:3035::6815:34c8, ...
+Connecting to yamahablackboxes.com (yamahablackboxes.com)|172.67.203.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4104 (4.0K) [application/octet-stream]
+Saving to: ‘sysex/voice/000010_vrc104b.syx’
+
+sysex/voice/000010_vrc104b.sy 100%[=================================================>]   4.01K  --.-KB/s    in 0s
+
+2023-08-18 12:13:47 (30.7 MB/s) - ‘sysex/voice/000010_vrc104b.syx’ saved [4104/4104]
+
+--2023-08-18 12:13:47--  https://yamahablackboxes.com/patches/dx7/vrc/vrc105a.syx
+Resolving yamahablackboxes.com (yamahablackboxes.com)... 172.67.203.95, 104.21.52.200, 2606:4700:3035::6815:34c8, ...
+Connecting to yamahablackboxes.com (yamahablackboxes.com)|172.67.203.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4104 (4.0K) [application/octet-stream]
+Saving to: ‘sysex/voice/000011_vrc105a.syx’
+
+sysex/voice/000011_vrc105a.sy 100%[=================================================>]   4.01K  --.-KB/s    in 0s
+
+2023-08-18 12:13:48 (31.4 MB/s) - ‘sysex/voice/000011_vrc105a.syx’ saved [4104/4104]
+
+--2023-08-18 12:13:48--  https://yamahablackboxes.com/patches/dx7/vrc/vrc105b.syx
+Resolving yamahablackboxes.com (yamahablackboxes.com)... 172.67.203.95, 104.21.52.200, 2606:4700:3035::6815:34c8, ...
+Connecting to yamahablackboxes.com (yamahablackboxes.com)|172.67.203.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4104 (4.0K) [application/octet-stream]
+Saving to: ‘sysex/voice/000012_vrc105b.syx’
+
+sysex/voice/000012_vrc105b.sy 100%[=================================================>]   4.01K  --.-KB/s    in 0s
+
+2023-08-18 12:13:49 (27.5 MB/s) - ‘sysex/voice/000012_vrc105b.syx’ saved [4104/4104]
+
+--2023-08-18 12:13:49--  https://yamahablackboxes.com/patches/dx7/vrc/vrc106a.syx
+Resolving yamahablackboxes.com (yamahablackboxes.com)... 172.67.203.95, 104.21.52.200, 2606:4700:3035::6815:34c8, ...
+Connecting to yamahablackboxes.com (yamahablackboxes.com)|172.67.203.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4104 (4.0K) [application/octet-stream]
+Saving to: ‘sysex/voice/000013_vrc106a.syx’
+
+sysex/voice/000013_vrc106a.sy 100%[=================================================>]   4.01K  --.-KB/s    in 0s
+
+2023-08-18 12:13:50 (9.24 MB/s) - ‘sysex/voice/000013_vrc106a.syx’ saved [4104/4104]
+
+--2023-08-18 12:13:50--  https://yamahablackboxes.com/patches/dx7/vrc/vrc106b.syx
+Resolving yamahablackboxes.com (yamahablackboxes.com)... 172.67.203.95, 104.21.52.200, 2606:4700:3035::6815:34c8, ...
+Connecting to yamahablackboxes.com (yamahablackboxes.com)|172.67.203.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4104 (4.0K) [application/octet-stream]
+Saving to: ‘sysex/voice/000014_vrc106b.syx’
+
+sysex/voice/000014_vrc106b.sy 100%[=================================================>]   4.01K  --.-KB/s    in 0s
+
+2023-08-18 12:13:51 (27.5 MB/s) - ‘sysex/voice/000014_vrc106b.syx’ saved [4104/4104]
+
+--2023-08-18 12:13:51--  https://yamahablackboxes.com/patches/dx7/vrc/vrc107a.syx
+Resolving yamahablackboxes.com (yamahablackboxes.com)... 172.67.203.95, 104.21.52.200, 2606:4700:3035::6815:34c8, ...
+Connecting to yamahablackboxes.com (yamahablackboxes.com)|172.67.203.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4104 (4.0K) [application/octet-stream]
+Saving to: ‘sysex/voice/000015_vrc107a.syx’
+
+sysex/voice/000015_vrc107a.sy 100%[=================================================>]   4.01K  --.-KB/s    in 0.001s
+
+2023-08-18 12:13:52 (4.57 MB/s) - ‘sysex/voice/000015_vrc107a.syx’ saved [4104/4104]
+
+--2023-08-18 12:13:52--  https://yamahablackboxes.com/patches/dx7/vrc/vrc107b.syx
+Resolving yamahablackboxes.com (yamahablackboxes.com)... 172.67.203.95, 104.21.52.200, 2606:4700:3035::6815:34c8, ...
+Connecting to yamahablackboxes.com (yamahablackboxes.com)|172.67.203.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4104 (4.0K) [application/octet-stream]
+Saving to: ‘sysex/voice/000016_vrc107b.syx’
+
+sysex/voice/000016_vrc107b.sy 100%[=================================================>]   4.01K  --.-KB/s    in 0s
+
+2023-08-18 12:13:53 (11.0 MB/s) - ‘sysex/voice/000016_vrc107b.syx’ saved [4104/4104]
+
+--2023-08-18 12:13:53--  https://yamahablackboxes.com/patches/dx7/vrc/vrc108a.syx
+Resolving yamahablackboxes.com (yamahablackboxes.com)... 172.67.203.95, 104.21.52.200, 2606:4700:3035::6815:34c8, ...
+Connecting to yamahablackboxes.com (yamahablackboxes.com)|172.67.203.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4104 (4.0K) [application/octet-stream]
+Saving to: ‘sysex/voice/000017_vrc108a.syx’
+
+sysex/voice/000017_vrc108a.sy 100%[=================================================>]   4.01K  --.-KB/s    in 0s
+
+2023-08-18 12:13:54 (29.9 MB/s) - ‘sysex/voice/000017_vrc108a.syx’ saved [4104/4104]
+
+--2023-08-18 12:13:54--  https://yamahablackboxes.com/patches/dx7/vrc/vrc108b.syx
+Resolving yamahablackboxes.com (yamahablackboxes.com)... 172.67.203.95, 104.21.52.200, 2606:4700:3035::6815:34c8, ...
+Connecting to yamahablackboxes.com (yamahablackboxes.com)|172.67.203.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4104 (4.0K) [application/octet-stream]
+Saving to: ‘sysex/voice/000018_vrc108b.syx’
+
+sysex/voice/000018_vrc108b.sy 100%[=================================================>]   4.01K  --.-KB/s    in 0s
+
+2023-08-18 12:13:55 (29.5 MB/s) - ‘sysex/voice/000018_vrc108b.syx’ saved [4104/4104]
+
+--2023-08-18 12:13:55--  https://yamahablackboxes.com/patches/dx7/vrc/vrc109a.syx
+Resolving yamahablackboxes.com (yamahablackboxes.com)... 172.67.203.95, 104.21.52.200, 2606:4700:3035::6815:34c8, ...
+Connecting to yamahablackboxes.com (yamahablackboxes.com)|172.67.203.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4104 (4.0K) [application/octet-stream]
+Saving to: ‘sysex/voice/000019_vrc109a.syx’
+
+sysex/voice/000019_vrc109a.sy 100%[=================================================>]   4.01K  --.-KB/s    in 0s
+
+2023-08-18 12:13:56 (30.5 MB/s) - ‘sysex/voice/000019_vrc109a.syx’ saved [4104/4104]
+
+--2023-08-18 12:13:56--  https://yamahablackboxes.com/patches/dx7/vrc/vrc109b.syx
+Resolving yamahablackboxes.com (yamahablackboxes.com)... 172.67.203.95, 104.21.52.200, 2606:4700:3035::6815:34c8, ...
+Connecting to yamahablackboxes.com (yamahablackboxes.com)|172.67.203.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4104 (4.0K) [application/octet-stream]
+Saving to: ‘sysex/voice/000020_vrc109b.syx’
+
+sysex/voice/000020_vrc109b.sy 100%[=================================================>]   4.01K  --.-KB/s    in 0s
+
+2023-08-18 12:13:57 (30.1 MB/s) - ‘sysex/voice/000020_vrc109b.syx’ saved [4104/4104]
+
+--2023-08-18 12:13:57--  https://yamahablackboxes.com/patches/dx7/vrc/vrc110a.syx
+Resolving yamahablackboxes.com (yamahablackboxes.com)... 172.67.203.95, 104.21.52.200, 2606:4700:3035::6815:34c8, ...
+Connecting to yamahablackboxes.com (yamahablackboxes.com)|172.67.203.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4104 (4.0K) [application/octet-stream]
+Saving to: ‘sysex/voice/000021_vrc110a.syx’
+
+sysex/voice/000021_vrc110a.sy 100%[=================================================>]   4.01K  --.-KB/s    in 0s
+
+2023-08-18 12:13:58 (29.8 MB/s) - ‘sysex/voice/000021_vrc110a.syx’ saved [4104/4104]
+
+--2023-08-18 12:13:58--  https://yamahablackboxes.com/patches/dx7/vrc/vrc110b.syx
+Resolving yamahablackboxes.com (yamahablackboxes.com)... 172.67.203.95, 104.21.52.200, 2606:4700:3035::6815:34c8, ...
+Connecting to yamahablackboxes.com (yamahablackboxes.com)|172.67.203.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4104 (4.0K) [application/octet-stream]
+Saving to: ‘sysex/voice/000022_vrc110b.syx’
+
+sysex/voice/000022_vrc110b.sy 100%[=================================================>]   4.01K  --.-KB/s    in 0.002s
+
+2023-08-18 12:13:59 (2.28 MB/s) - ‘sysex/voice/000022_vrc110b.syx’ saved [4104/4104]
+
+--2023-08-18 12:13:59--  https://yamahablackboxes.com/patches/dx7/vrc/vrc111a.syx
+Resolving yamahablackboxes.com (yamahablackboxes.com)... 172.67.203.95, 104.21.52.200, 2606:4700:3035::6815:34c8, ...
+Connecting to yamahablackboxes.com (yamahablackboxes.com)|172.67.203.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4104 (4.0K) [application/octet-stream]
+Saving to: ‘sysex/voice/000023_vrc111a.syx’
+
+sysex/voice/000023_vrc111a.sy 100%[=================================================>]   4.01K  --.-KB/s    in 0s
+
+2023-08-18 12:14:00 (27.5 MB/s) - ‘sysex/voice/000023_vrc111a.syx’ saved [4104/4104]
+
+--2023-08-18 12:14:00--  https://yamahablackboxes.com/patches/dx7/vrc/vrc111b.syx
+Resolving yamahablackboxes.com (yamahablackboxes.com)... 172.67.203.95, 104.21.52.200, 2606:4700:3035::6815:34c8, ...
+Connecting to yamahablackboxes.com (yamahablackboxes.com)|172.67.203.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4104 (4.0K) [application/octet-stream]
+Saving to: ‘sysex/voice/000024_vrc111b.syx’
+
+sysex/voice/000024_vrc111b.sy 100%[=================================================>]   4.01K  --.-KB/s    in 0.001s
+
+2023-08-18 12:14:01 (4.97 MB/s) - ‘sysex/voice/000024_vrc111b.syx’ saved [4104/4104]
+
+--2023-08-18 12:14:01--  https://yamahablackboxes.com/patches/dx7/vrc/vrc112a.syx
+Resolving yamahablackboxes.com (yamahablackboxes.com)... 172.67.203.95, 104.21.52.200, 2606:4700:3035::6815:34c8, ...
+Connecting to yamahablackboxes.com (yamahablackboxes.com)|172.67.203.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4104 (4.0K) [application/octet-stream]
+Saving to: ‘sysex/voice/000025_vrc112a.syx’
+
+sysex/voice/000025_vrc112a.sy 100%[=================================================>]   4.01K  --.-KB/s    in 0.001s
+
+2023-08-18 12:14:02 (2.73 MB/s) - ‘sysex/voice/000025_vrc112a.syx’ saved [4104/4104]
+
+--2023-08-18 12:14:02--  https://yamahablackboxes.com/patches/dx7/vrc/vrc112b.syx
+Resolving yamahablackboxes.com (yamahablackboxes.com)... 172.67.203.95, 104.21.52.200, 2606:4700:3035::6815:34c8, ...
+Connecting to yamahablackboxes.com (yamahablackboxes.com)|172.67.203.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4104 (4.0K) [application/octet-stream]
+Saving to: ‘sysex/voice/000026_vrc112b.syx’
+
+sysex/voice/000026_vrc112b.sy 100%[=================================================>]   4.01K  --.-KB/s    in 0s
+
+2023-08-18 12:14:03 (29.0 MB/s) - ‘sysex/voice/000026_vrc112b.syx’ saved [4104/4104]
+
+tobias@i5-11400:~/MiniDexed/sdcard$ cd ..
+tobias@i5-11400:~/MiniDexed$ cp -r ./circle-stdlib/libs/circle/boot/* sdcard
+tobias@i5-11400:~/MiniDexed$ rm -rf sdcard/config*.txt sdcard/README sdcard/Makefile sdcard/armstub sdcard/COPYING.linux
+tobias@i5-11400:~/MiniDexed$ cp ./src/config.txt ./src/minidexed.ini ./src/*img ./src/performance.ini sdcard/
+tobias@i5-11400:~/MiniDexed$ echo "usbspeed=full" > sdcard/cmdline.txt
+tobias@i5-11400:~/MiniDexed$ cd sdcard
+tobias@i5-11400:~/MiniDexed/sdcard$ ls
+LICENCE.broadcom          bcm2711-rpi-4-b.dtb  bootcode.bin  fixup.dat     fixup_cd.dat   performance.ini  start4cd.elf
+armstub8-rpi4.bin         bcm2711-rpi-400.dtb  cmdline.txt   fixup4.dat    kernel8.img    start.elf        start_cd.elf
+bcm2710-rpi-zero-2-w.dtb  bcm2711-rpi-cm4.dtb  config.txt    fixup4cd.dat  minidexed.ini  start4.elf       sysex
+tobias@i5-11400:~/MiniDexed/sdcard$ cd -
+/home/tobias/MiniDexed
+tobias@i5-11400:~/MiniDexed$ mc
+
+tobias@i5-11400:~/MiniDexed$ history
