@@ -9,6 +9,8 @@ In both cases two changes were made: (1) This uses the i2s + i2c [**Waveshare WM
 
 The Minidexed can be used as a USB Midi host i.e. it can play via a Midi USB keyboard plugged into the Minidexed Raspberry Pi USB ports, but needs something such as a ATMega32U4 (Arduino Pro Micro) or RPi Pico, to act as a a USB Midi device i.e. appear to a PC as a [**USB Midi device**](https://github.com/probonopd/MiniDexed/discussions/236).
 
+It should be noted that the 3v3 regulator on the Pi3B(+)/4B can easily supply the 1602LCD current (about 80mA) - refer to [**this discussion**](https://raspberrypi.stackexchange.com/questions/51615/raspberry-pi-power-limitations) where a value of 800mA maximum for the 3v3 supply is suggested.
+
 <p align="left">
 <img src="images/minidexedv2a.jpg" height="240" /> 
 <img src="images/minidexedv2c.jpg" height="240" /> 
