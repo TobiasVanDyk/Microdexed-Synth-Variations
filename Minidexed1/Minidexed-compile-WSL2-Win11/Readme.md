@@ -1,7 +1,7 @@
 # Compiling Minidexed under WSL2 (Ubuntu 20.04) on Windows 11
 
 ## Minidexed with Raspberry Pi 3B+ using a Waveshare WM8960 DAC hat and a 6N137 MidiIn
-Using a updated Ubuntu 20.04 WSL2 on Windows 11 for compiling Minidexed was quick - a few minutes - but there are a few additional steps not mentioned on the [**Minidexed Wiki**](https://github.com/probonopd/MiniDexed/wiki/Development). The [**step discussed here**](https://github.com/probonopd/MiniDexed/discussions/269) was not needed.
+Using an updated Ubuntu 20.04 WSL2 on Windows 11 for compiling Minidexed was quick - a few minutes - but there are a few additional steps not mentioned on the [**Minidexed Wiki**](https://github.com/probonopd/MiniDexed/wiki/Development). The [**step discussed here**](https://github.com/probonopd/MiniDexed/discussions/269) was not needed.
 
 A fresh WSL2 also needs:
 ``` 
@@ -54,7 +54,7 @@ The resulting unmodified sdcard folder is here as compiled-sdcard.zip, with the 
 <img src="images/compile1.png" height="240" /> 
 </p>
 
-Using exactly the same procedure under Linux Mint 21.2 also yielded a functional setup - refer to the screenshot below - and the sdcard files are in sdcard.tar.gz.
+Using exactly the same procedure under Linux Mint 21.2 also yielded a functional setup - refer to the screenshot below - and the sdcard files are in sdcard.tar.gz - compile10.txt (about 18,000 lines), is the complete build output during the compilation.
 
 <p align="left">
 <img src="images/mint212.png" height="280" /> 
