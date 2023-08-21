@@ -54,7 +54,7 @@ The resulting unmodified sdcard folder is here as compiled-sdcard.zip, with the 
 <img src="images/compile1.png" height="240" /> 
 </p>
 
-Using exactly the same procedure under Linux Mint 21.2 also yielded a functional setup - refer to the screenshot below - and the sdcard files are in sdcard.tar.gz - compile10.txt (about 18,000 lines), is the complete build output during the compilation.
+Using exactly the same procedure under Linux Mint 21.2 also yielded a functional setup - refer to the screenshot below - and the sdcard files are in sdcard.tar.gz - compile10.txt (about 18 kilo-lines), is the complete build output during the compilation. (Replace sudo apt install zip with sudo apt install git). A Raspberry Pi 4B build was also completed using RASPPI = 4 in Make.conf - it is here as sdcard-rpi4.tar.gz.
 
 <p align="left">
 <img src="images/mint212.png" height="280" /> 
