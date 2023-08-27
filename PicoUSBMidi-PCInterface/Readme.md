@@ -15,9 +15,9 @@ There are two ways to connect the Pico to the Minidexed Raspberry Pi. The first 
 <img src="images/usbmidi3.png" height="180" /> 
 </p>
 
-There is also an option to use Circuitpython the make the Pico-based Midi interface - this was not tested but is [**discussed here**](https://github.com/alf45tar/PedalinoMini) just after the rsta2 SDK -based interface.
+There is also an fourth option to use Circuitpython the make the Pico-based Midi interface - this was not tested but is [**discussed here**](https://github.com/alf45tar/PedalinoMini) just after the rsta2 SDK -based interface.
 
-* **SDK compile instructions:** Download [**rsta2 Pico**](https://github.com/rsta2/pico) as a zip file and ezxtract under your Pico development folder as a folder pico. Developer Command Prompt Window (Visual Studio Shell) - run it as administrator, and for example run setx PICO_SDK_PATH "C:\Users\Pico\Downloads\pico-sdk" or wherever your own Pico SDK is situated. Then do:
+* **SDK compile instructions:** Download [**rsta2 Pico**](https://github.com/rsta2/pico) as a zip file and extract under your Pico development folder as a folder pico. Developer Command Prompt Window (Visual Studio Shell) - run it as administrator, and for example run setx PICO_SDK_PATH "C:\Users\Pico\Downloads\pico-sdk" or wherever your own Pico SDK is situated. Then do:
  
 ``` 
 cd pico
@@ -29,8 +29,6 @@ nmake
 
 This will build all four of the examples projects - the uf2 files are inside the build directories.
 
-<p align="left">
-<img src="images/minidexedpicopi1" height="280" /> 
-</p>
+
 
 
