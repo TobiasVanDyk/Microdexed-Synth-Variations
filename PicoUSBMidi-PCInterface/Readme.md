@@ -15,7 +15,9 @@ There are two ways to connect the Pico to the Minidexed Raspberry Pi. The first 
 <img src="images/usbmidi3.png" height="180" /> 
 </p>
 
-There is also an fourth option to use Circuitpython the make the Pico-based Midi interface - this was not tested but is [**discussed here**](https://github.com/alf45tar/PedalinoMini) just after the rsta2 SDK -based interface. [**This site has many Pico Midi interface and router projects**](https://diyelectromusic.wordpress.com/) mainly using Circuitpython.
+There is also an fourth option to use Circuitpython the make the Pico-based Midi interface - this was not tested but is [**discussed here**](https://github.com/alf45tar/PedalinoMini) just after the rsta2 SDK -based interface. [**This site has many Pico Midi interface and router projects**](https://diyelectromusic.wordpress.com/) mainly using Circuitpython. 
+
+Another site use a Pico USB Host to bridge a modern USB MIDI device such as a Midi Music keyboard to a 5-pin DIN MIDI IN and MIDI OUT [midi2usbhost](https://github.com/rppicomidi/midi2usbhost). and a Pc USB to 5-pin DIN MIDI interface [midi2usbdev](https://github.com/rppicomidi/midi2usbdev) also using a Pico. This has not been tested as yet.
 
 * **SDK compile instructions:** Download [**rsta2 Pico**](https://github.com/rsta2/pico) as a zip file and extract under your Pico development folder as a folder pico. Open a Developer Command Prompt Window (Visual Studio Shell) as administrator, and (for example) run: setx PICO_SDK_PATH "C:\Users\Pico\Downloads\pico-sdk" or wherever your own Pico SDK is situated. Then do:
  
