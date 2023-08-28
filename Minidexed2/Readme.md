@@ -9,7 +9,7 @@ It uses the excellent [**snap-close**](images/DHSbuild.png) 3d-printed case [**p
 The Pico and Minidexed Tx-Rx Midi interface is [**discussed here**](https://github.com/TobiasVanDyk/Microdexed-Synth-Variations/tree/main/PicoUSBMidi-PCInterface).
 
 <p align="left">
-<img src="images/minidexed2.png" height="200" />   
+<img src="minidexed2.png" height="200" />   
 <img src="images/minidexedpicopi2.png" height="200" /> 
 <img src="images/minidexedpicopi1.png" height="200" /> 
 </p>
