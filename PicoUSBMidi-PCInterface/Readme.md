@@ -10,9 +10,10 @@ There are two ways to connect the Pico to the Minidexed Raspberry Pi. The first 
 
 
 <p align="left">
-<img src="images/minidexedpicopi1.png" height="180" /> 
-<img src="images/midi-adaptor-flex.png" height="180" /> 
-<img src="images/usbmidi3.png" height="180" /> 
+<img src="images/minidexedpicopi1.png" height="160" /> 
+<img src="images/Midi-Adaptor-SysEx.jpg" height="160" /> 
+<img src="images/midi-adaptor-flex.png" height="160" /> 
+<img src="images/usbmidi3.png" height="160" /> 
 </p>
 
 There is also an fourth option to use Circuitpython the make the Pico-based Midi interface - this was not tested but is [**discussed here**](https://github.com/alf45tar/PedalinoMini) just after the rsta2 SDK -based interface. [**This site has many Pico Midi interface and router projects**](https://diyelectromusic.wordpress.com/) mainly using Circuitpython. 
